@@ -1,0 +1,567 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATENDIMENTO </title>
+ 
+    
+
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#275094',
+                        'primary-dark': '#1d3d70',
+                        'bg-light': '#f1f8fa',
+                        whatsapp: '#25D366',
+                        'whatsapp-dark': '#1da851'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased bg-white">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 lg:py-5">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-headset text-primary text-2xl lg:text-3xl"></i>
+                    <span class="text-xl lg:text-2xl font-bold text-primary">ATENDIMENTO</span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex space-x-8 items-center">
+                    <li><a href="#inicio" class="text-gray-700 hover:text-primary transition-colors font-medium">Início</a></li>
+                    <li><a href="#atendimento" class="text-gray-700 hover:text-primary transition-colors font-medium">Atendimento</a></li>
+                    <li><a href="#boleto" class="text-gray-700 hover:text-primary transition-colors font-medium">Boleto Digital</a></li>
+                    <li><a href="#depoimentos" class="text-gray-700 hover:text-primary transition-colors font-medium">Depoimentos</a></li>
+                    <li>
+                        <a href="https://wa.me/+5511968983093?text=Desejo%20atendimento." target="_blank" rel="noopener noreferrer" class="bg-whatsapp hover:bg-whatsapp-dark text-white px-6 py-2.5 rounded-lg font-semibold transition-all transform hover:scale-105 inline-flex items-center space-x-2">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>Solicitar Atendimento</span>
+                        </a>
+                    </li>
+                </ul>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-primary text-2xl focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-200 pt-4">
+                <ul class="space-y-3">
+                    <li><a href="#inicio" class="block text-gray-700 hover:text-primary transition-colors font-medium">Início</a></li>
+                    <li><a href="#atendimento" class="block text-gray-700 hover:text-primary transition-colors font-medium">Atendimento</a></li>
+                    <li><a href="#boleto" class="block text-gray-700 hover:text-primary transition-colors font-medium">Boleto Digital</a></li>
+                    <li><a href="#depoimentos" class="block text-gray-700 hover:text-primary transition-colors font-medium">Depoimentos</a></li>
+                    <li>
+                        <a href="https://wa.me/+5511968983093?text=Desejo%20atendimento." target="_blank" rel="noopener noreferrer" class="bg-whatsapp hover:bg-whatsapp-dark text-white px-6 py-3 rounded-lg font-semibold transition-all inline-flex items-center justify-center space-x-2 w-full">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>Solicitar Atendimento</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative pt-20 lg:pt-24">
+        <div class="relative h-[500px] lg:h-[600px] w-full overflow-hidden">
+            <!-- Hero Image -->
+            <img src="images/GettyImages-1196485602.jpg" alt="Equipe de atendimento profissional pronta para ajudar clientes com suporte rápido e eficiente" class="absolute inset-0 w-full h-full object-cover" loading="eager">
+            
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-primary opacity-75"></div>
+            
+            <!-- Content -->
+            <div class="relative container mx-auto px-4 h-full flex items-center">
+                <div class="max-w-3xl text-white">
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 lg:mb-6 leading-tight">
+                        Solicite Quitação e
+2 Via agora.
+                    </h1>
+                    <p class="text-lg md:text-xl lg:text-2xl mb-8 lg:mb-10 leading-relaxed opacity-95">
+                        Nossa equipe está pronta para ajudar você a resolver sua solicitação de forma simples e rápida.
+                    </p>
+                    <a href="https://wa.me/+5511968983093?text=Desejo%20atendimento." target="_blank" rel="noopener noreferrer" class="bg-whatsapp hover:bg-whatsapp-dark text-white px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105 inline-flex items-center space-x-3 shadow-2xl">
+                        <i class="fab fa-whatsapp text-2xl"></i>
+                        <span>Solicitar Atendimento</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Atendimento Digital Section -->
+    <section id="atendimento" class="py-16 lg:py-24 bg-bg-light">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center mb-12 lg:mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6">
+                    Atendimento Simplificado pelo WhatsApp
+                </h2>
+                <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+                    Com o <strong>Boleto Digital no WhatsApp</strong>, você continuará recebendo o mesmo documento de pagamento, com todas as informações, valores e prazos de sempre.
+                </p>
+                <p class="text-lg md:text-xl text-gray-700 leading-relaxed mt-4">
+                    Agora tudo acontece de maneira mais simples e rápida: após solicitar o atendimento, você receberá o documento diretamente no seu e-mail cadastrado, garantindo mais praticidade e segurança.
+                </p>
+            </div>
+            
+            <!-- Benefícios Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-12">
+                <!-- Benefício 1 -->
+                <div class="bg-white p-6 lg:p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow text-center animate-fadeIn">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-bolt text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Atendimento Rápido</h3>
+                    <p class="text-gray-600">Resposta imediata via WhatsApp</p>
+                </div>
+                
+                <!-- Benefício 2 -->
+                <div class="bg-white p-6 lg:p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow text-center animate-fadeIn">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Processo Seguro</h3>
+                    <p class="text-gray-600">Verificação completa de dados</p>
+                </div>
+                
+                <!-- Benefício 3 -->
+                <div class="bg-white p-6 lg:p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow text-center animate-fadeIn">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Recebimento Digital</h3>
+                    <p class="text-gray-600">Documento direto no seu e-mail</p>
+                </div>
+                
+                <!-- Benefício 4 -->
+                <div class="bg-white p-6 lg:p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow text-center animate-fadeIn">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-hand-holding-usd text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Praticidade no Pagamento</h3>
+                    <p class="text-gray-600">Pague de onde estiver</p>
+                </div>
+            </div>
+            
+            <!-- CTA Button -->
+            <div class="text-center">
+                <a href="https://wa.me/+5511968983093?text=Desejo%20atendimento." target="_blank" rel="noopener noreferrer" class="bg-whatsapp hover:bg-whatsapp-dark text-white px-10 py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105 inline-flex items-center space-x-3 shadow-xl">
+                    <i class="fab fa-whatsapp text-2xl"></i>
+                    <span>Receber Atendimento</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona Section -->
+    <section id="boleto" class="py-16 lg:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 lg:mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4">
+                    Como Funciona
+                </h2>
+                <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+                    Receba seu boleto digital em apenas 3 passos simples
+                </p>
+            </div>
+            
+            <!-- Steps -->
+            <div class="max-w-5xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+                    <!-- Step 1 -->
+                    <div class="text-center">
+                        <div class="relative mb-6">
+                            <div class="w-20 h-20 lg:w-24 lg:h-24 bg-primary rounded-full flex items-center justify-center mx-auto shadow-lg">
+                                <span class="text-white text-3xl lg:text-4xl font-bold">1</span>
+                            </div>
+                            <div class="absolute top-10 left-1/2 transform translate-x-12 hidden md:block">
+                                <i class="fas fa-arrow-right text-primary text-3xl opacity-30"></i>
+                            </div>
+                        </div>
+                        <div class="bg-bg-light p-6 rounded-xl h-full">
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow">
+                                <i class="fas fa-comments text-primary text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl lg:text-2xl font-bold text-gray-800 mb-3">Solicite Atendimento</h3>
+                            <p class="text-gray-600 leading-relaxed">Clique no botão de atendimento e fale com um especialista.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="text-center">
+                        <div class="relative mb-6">
+                            <div class="w-20 h-20 lg:w-24 lg:h-24 bg-primary rounded-full flex items-center justify-center mx-auto shadow-lg">
+                                <span class="text-white text-3xl lg:text-4xl font-bold">2</span>
+                            </div>
+                            <div class="absolute top-10 left-1/2 transform translate-x-12 hidden md:block">
+                                <i class="fas fa-arrow-right text-primary text-3xl opacity-30"></i>
+                            </div>
+                        </div>
+                        <div class="bg-bg-light p-6 rounded-xl h-full">
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow">
+                                <i class="fas fa-user-check text-primary text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl lg:text-2xl font-bold text-gray-800 mb-3">Confirme seus Dados</h3>
+                            <p class="text-gray-600 leading-relaxed">Nossa equipe realiza a verificação para garantir segurança.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="text-center">
+                        <div class="relative mb-6">
+                            <div class="w-20 h-20 lg:w-24 lg:h-24 bg-primary rounded-full flex items-center justify-center mx-auto shadow-lg">
+                                <span class="text-white text-3xl lg:text-4xl font-bold">3</span>
+                            </div>
+                        </div>
+                        <div class="bg-bg-light p-6 rounded-xl h-full">
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow">
+                                <i class="fas fa-file-invoice-dollar text-primary text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl lg:text-2xl font-bold text-gray-800 mb-3">Receba seu Boleto Digital</h3>
+                            <p class="text-gray-600 leading-relaxed">O documento é enviado para seu e-mail cadastrado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos Section -->
+    <section id="depoimentos" class="py-16 lg:py-24 bg-bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 lg:mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4">
+                    O que nossos clientes dizem
+                </h2>
+                <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+                    Experiências reais de quem já utilizou nosso atendimento
+                </p>
+            </div>
+            
+            <!-- Testimonials Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+                <!-- Depoimento 1 -->
+                <div class="bg-white p-6 lg:p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-14 h-14 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                            MS
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Mariana Silva</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed italic">
+                        "O atendimento foi rápido e muito eficiente. Consegui resolver minha solicitação em poucos minutos."
+                    </p>
+                </div>
+                
+                <!-- Depoimento 2 -->
+                <div class="bg-white p-6 lg:p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-14 h-14 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                            CM
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Carlos Mendes</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed italic">
+                        "Gostei muito da facilidade pelo WhatsApp. Recebi meu boleto rapidamente e sem complicações."
+                    </p>
+                </div>
+                
+                <!-- Depoimento 3 -->
+                <div class="bg-white p-6 lg:p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-14 h-14 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                            FR
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Fernanda Rocha</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed italic">
+                        "Equipe muito atenciosa. O processo foi simples e seguro."
+                    </p>
+                </div>
+                
+                <!-- Depoimento 4 -->
+                <div class="bg-white p-6 lg:p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-14 h-14 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                            RA
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Ricardo Almeida</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed italic">
+                        "Excelente atendimento. Recomendo para quem precisa resolver pendências com rapidez."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final Section -->
+    <section class="py-16 lg:py-20 bg-primary">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+                Precisa de atendimento agora?
+            </h2>
+            <p class="text-xl md:text-2xl text-white opacity-95 mb-10 max-w-2xl mx-auto">
+                Nossa equipe está pronta para ajudar você.
+            </p>
+            <a href="https://wa.me/+5511968983093?text=Desejo%20atendimento." target="_blank" rel="noopener noreferrer" class="bg-whatsapp hover:bg-whatsapp-dark text-white px-12 py-5 rounded-lg font-bold text-xl transition-all transform hover:scale-105 inline-flex items-center space-x-3 shadow-2xl">
+                <i class="fab fa-whatsapp text-3xl"></i>
+                <span>Solicitar Atendimento pelo WhatsApp</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 lg:py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-8">
+                <!-- Logo e Descrição -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-headset text-primary text-3xl"></i>
+                        <span class="text-2xl font-bold text-white">ATENDIMENTO</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed max-w-md">
+                        Oferecemos suporte e soluções para facilitar a regularização e atendimento de clientes de forma prática, rápida e segura.
+                    </p>
+                </div>
+                
+                <!-- Links Rápidos -->
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Links Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#inicio" class="hover:text-white transition-colors">Início</a></li>
+                        <li><a href="#atendimento" class="hover:text-white transition-colors">Atendimento</a></li>
+                        <li><a href="#boleto" class="hover:text-white transition-colors">Boleto Digital</a></li>
+                        <li><a href="#depoimentos" class="hover:text-white transition-colors">Depoimentos</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contato -->
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Contato</h3>
+                    <div class="space-y-3">
+                        <a href="https://wa.me/+5511968983093?text=Desejo%20atendimento." target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 hover:text-white transition-colors">
+                            <i class="fab fa-whatsapp text-whatsapp"></i>
+                            <span>+55 11 95994-4995</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Divider -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="text-center">
+                    <p class="text-gray-500 text-sm mb-2">
+                        Este site é uma plataforma de atendimento e suporte ao cliente.
+                    </p>
+                    <p class="text-gray-500 text-sm">
+                        © 2026 — ATENDIMENTO. Todos os direitos reservados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+<div style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;">
+  <style>
+    .growth-wpp {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 24px;
+      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+      border-radius: 60px;
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+      text-decoration: none;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      color: white;
+      transition: all 0.25s ease;
+      border: none;
+      cursor: pointer;
+      animation: pulse 2s infinite;
+    }
+    .growth-wpp:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 15px 30px rgba(37, 211, 102, 0.4);
+      background: linear-gradient(135deg, #20B859 0%, #075E54 100%);
+    }
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+      }
+      50% {
+        box-shadow: 0 8px 30px rgba(37, 211, 102, 0.6);
+      }
+      100% {
+        box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+      }
+    }
+    .wpp-badge {
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      background: #ff4757;
+      color: white;
+      font-size: 10px;
+      font-weight: bold;
+      padding: 3px 8px;
+      border-radius: 50px;
+      font-family: monospace;
+    }
+    @media (max-width: 768px) {
+      .growth-wpp {
+        padding: 12px 20px;
+        font-size: 13px;
+      }
+    }
+  </style>
+  <a href="https://wa.me/+5511968983093?text=Desejo%20atendimento." target="_blank" rel="noopener noreferrer" class="growth-wpp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="white">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.22-.644c.902.476 1.931.734 3.09.734h.003c3.18 0 5.767-2.587 5.768-5.766.001-3.18-2.585-5.765-5.766-5.765zm0 10.539c-1.229 0-2.36-.361-3.322-.979l-.238-.141-1.332.386.4-1.297-.14-.245c-.663-.994-1.018-2.098-1.018-3.24 0-2.761 2.246-5.007 5.006-5.008 2.761 0 5.007 2.246 5.008 5.006.001 2.76-2.245 5.006-5.006 5.006zm2.774-3.4c-.152-.076-.899-.444-1.038-.494-.14-.051-.241-.076-.343.076-.102.152-.394.494-.484.594-.089.101-.179.114-.331.038s-.648-.239-1.235-.762c-.456-.407-.764-.909-.853-1.063-.089-.152-.01-.234.067-.31.068-.068.152-.178.228-.267.076-.089.102-.152.152-.254.051-.102.025-.19-.013-.266s-.343-.826-.47-1.131c-.124-.296-.25-.255-.343-.26-.089 0-.19-.005-.292-.005-.101 0-.266.038-.405.19-.139.152-.531.519-.531 1.266s.544 1.469.62 1.57c.076.101 1.07 1.633 2.59 2.29.362.156.644.249.864.319.363.114.693.098.954.059.291-.043.899-.368 1.025-.723.126-.355.126-.659.089-.722-.038-.063-.139-.102-.291-.177z"></path>
+    </svg>
+    <span>🔥 FALE AGORA | Atendimento Rápido</span>
+  </a>
+</div>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+                
+                // Toggle icon
+                const icon = mobileMenuBtn.querySelector('i');
+                if (mobileMenu.classList.contains('hidden')) {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                } else {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                }
+            });
+            
+            // Close mobile menu when clicking on a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                    const icon = mobileMenuBtn.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                });
+            });
+            
+            // Smooth scroll with offset for fixed header
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        const headerOffset = 80;
+                        const elementPosition = target.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Add animation on scroll for elements
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fadeIn');
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe elements with animation
+            document.querySelectorAll('.bg-white.p-6, .bg-white.p-8').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+
+
+</body></html>
